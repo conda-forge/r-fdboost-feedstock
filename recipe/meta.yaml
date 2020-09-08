@@ -49,10 +49,11 @@ test:
 
 about:
   home: https://github.com/boost-R/FDboost
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Regression models for functional data, i.e., scalar-on-function, function-on-scalar and function-on-function regression models, are fitted by a component-wise gradient boosting algorithm.
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
