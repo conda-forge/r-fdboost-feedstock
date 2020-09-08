@@ -1,4 +1,4 @@
-{% set version = "0.3-3" %}
+{% set version = "1.0-0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/FDboost_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/FDboost/FDboost_{{ version }}.tar.gz
-  sha256: d87f572f47dde00d13b6e021d6886ca4339a65bfe48fdb68c448a3f766dab529
+  sha256: 48a8d398d7e407056b13d247e90883bd39b6de7a1dec66d9c09aa22a54734788
 
 build:
   merge_build_host: true  # [win]
@@ -49,10 +49,11 @@ test:
 
 about:
   home: https://github.com/boost-R/FDboost
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Regression models for functional data, i.e., scalar-on-function, function-on-scalar and function-on-function regression models, are fitted by a component-wise gradient boosting algorithm.
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
