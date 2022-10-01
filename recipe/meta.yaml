@@ -1,4 +1,4 @@
-{% set version = "1.1-0" %}
+{% set version = "1.1-1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/FDboost_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/FDboost/FDboost_{{ version }}.tar.gz
-  sha256: 5b4957ee05ec6eb0d68a696472f5cbb8de1cfbfc46e332563a9eb46a9dec213e
+  sha256: d0937e7335d5c0fb0e804e9ca7d93d0083bf4f462d0d8f9446166e5c74353fc3
 
 build:
   merge_build_host: true  # [win]
