@@ -1,11 +1,11 @@
-About r-fdboost
-===============
+About r-fdboost-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fdboost-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/boost-R/FDboost
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fdboost-feedstock/blob/main/LICENSE.txt)
 
 Summary: Regression models for functional data, i.e., scalar-on-function, function-on-scalar and function-on-function regression models, are fitted by a component-wise gradient boosting algorithm.
 
